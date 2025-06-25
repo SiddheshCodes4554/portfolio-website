@@ -14,7 +14,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import Footer from "@/components/Footer" // ✅ Import Footer
+import Footer from "@/components/footer"
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger)
@@ -241,7 +241,7 @@ export default function ContactSection() {
                   <span className="text-green-400 font-bold">Available for Projects</span>
                 </div>
                 <p className="text-gray-300 text-sm">
-                  Ready to bring your vision to life. Let’s create something extraordinary together!
+                  Ready to bring your vision to life. Let's create something extraordinary together!
                 </p>
               </div>
             </div>
