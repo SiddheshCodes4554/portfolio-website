@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Siddhesh Gawade Portfolio',
+  description: 'Created by Siddhesh Gawade, this portfolio showcases my work and skills in web development, design, and more.',
+  generator: 'Siddhesh Gawade',
 }
 
 export default function RootLayout({
