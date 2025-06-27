@@ -37,7 +37,7 @@ const initialProjects: Project[] = [
     category: "coding",
     technologies: ["HTML", "CSS", "PHP", "MYSQL", "JAVASCRIPT"],
     github: "https://github.com/SiddheshCodes4554/SchoolWebsite",
-    live: "https://example.com",
+    live: "https://drive.google.com/file/d/1azlXpAYYxxQTSvqWOxuiKsodzI1Z0hIW/view?usp=sharing",
     year: "2024",
   },
   {
