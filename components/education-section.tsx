@@ -21,7 +21,7 @@ const educationData = [
   },
   {
     school: "Dheeraj Jr. College of Arts, Commerce & Science",
-    degree: "10th Grade (SSC)",
+    degree: "12th Grade (HSC)",
     duration: "2023 - 2025",
     location: "Pune",
     percentage: "83%",
