@@ -109,7 +109,7 @@ export default function AboutSection() {
               <div className="relative w-64 h-80 md:w-80 md:h-96">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 rounded-2xl blur-xl"></div>
                 <Image
-                  src="/Webphoto.png?height=384&width=320"
+                  src="/Profile_website.png?height=384&width=320"
                   alt="About Alex"
                   width={320}
                   height={384}
