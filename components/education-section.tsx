@@ -29,7 +29,7 @@ const educationData = [
     color: "purple",
   },
   {
-    school: "Nxtwave Institute of Advanced Technologies, NIAT",
+    school: "Ajeenkya Dy Patil University, Punev ",
     degree: "Btech. Computer Science and Engineering",
     duration: "2025-2029",
     location: "Pune",
