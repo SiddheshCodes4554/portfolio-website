@@ -109,8 +109,8 @@ export default function AboutSection() {
               <div className="relative w-64 h-80 md:w-80 md:h-96">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 rounded-2xl blur-xl"></div>
                 <Image
-                  src="/Profile_website.png?height=384&width=320"
-                  alt="About Alex"
+                  src="https://res.cloudinary.com/donzpxmic/image/upload/v1767348786/WhatsApp_Image_2026-01-02_at_3.38.35_PM_ezeffz.png?height=384&width=320"
+                  alt="About Siddhesh"
                   width={320}
                   height={384}
                   className="relative z-10 w-full h-full object-cover rounded-2xl shadow-2xl"
@@ -147,7 +147,7 @@ export default function AboutSection() {
                 Full Stack Web Development
               </span>
               <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium border border-purple-500/30">
-                Video Production
+                Video Editing
               </span>
               <span className="px-4 py-2 bg-pink-500/20 text-pink-300 rounded-full text-sm font-medium border border-pink-500/30">
                 UI/UX Design
@@ -171,7 +171,7 @@ export default function AboutSection() {
             <div className="flex justify-center mb-4">
               <Award className="w-12 h-12 md:w-16 md:h-16 text-cyan-400" />
             </div>
-            <div className="text-3xl md:text-4xl font-black text-cyan-400 mb-2">4</div>
+            <div className="text-3xl md:text-4xl font-black text-cyan-400 mb-2">7+</div>
             <div className="text-white font-bold text-lg md:text-xl mb-2">Projects Completed</div>
             <div className="text-gray-400 text-sm md:text-base">
               I created Full Stack Web Applications. Edited Videos and Created UI/UX</div>
@@ -182,7 +182,7 @@ export default function AboutSection() {
             <div className="flex justify-center mb-4">
               <Briefcase className="w-12 h-12 md:w-16 md:h-16 text-purple-400" />
             </div>
-            <div className="text-3xl md:text-4xl font-black text-purple-400 mb-2">3+</div>
+            <div className="text-3xl md:text-4xl font-black text-purple-400 mb-2">5+</div>
             <div className="text-white font-bold text-lg md:text-xl mb-2">Years Experience</div>
             <div className="text-gray-400 text-sm md:text-base">
               I have been learning and creating apps.
