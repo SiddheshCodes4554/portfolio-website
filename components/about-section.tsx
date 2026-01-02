@@ -155,7 +155,8 @@ export default function AboutSection() {
             </div>
 
             <a
-  href="/Siddhesh-Gawade-Resume.pdf"
+  href="https://drive.google.com/uc?export=download&id=1c0Cu4RGwoyMqPJJxg1M7jZEecWTGf3r-
+"
   download
   className="mt-6 inline-block px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-bold rounded-lg hover:scale-105 transition-transform duration-300 text-center"
 >
