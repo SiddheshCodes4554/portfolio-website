@@ -31,6 +31,16 @@ interface Project {
 const initialProjects: Project[] = [
   {
     id: 1,
+    title: "ClubCentral",
+    description: "A comprehensive full-stack club management platform designed to help college clubs and organizations manage their members, events, finances, teams, and social media presence all in one place. Now with Institution Mode for multi-club management at the college/university level.",
+    image: "https://res-console.cloudinary.com/dng6bmnjl/thumbnails/v1/image/upload/v1767336212/U2NyZWVuc2hvdF8yMDI2LTAxLTAyXzEyMTMxMV9ra3R5dzg=/drilldown?height=300&width=400",
+    category: "coding",
+    technologies: ["Tailwind CSS", "Node.js", "React", "PostgreSQL"],
+    live: "http://clubcentral.onrender.com/",
+    year: "2026",
+  },
+  {
+    id: 2,
     title: "Sindhudurg Sainik School Website",
     description: "This is a full stack school website project along with admin panel allowing admin to manage each and every part of website without need to change the code.",
     image: "/project1.jpeg?height=300&width=400",
@@ -41,7 +51,7 @@ const initialProjects: Project[] = [
     year: "2024",
   },
   {
-    id: 2,
+    id: 3,
     title: "Internship Sample Video",
     description: "I edited this raw footage and enhanced it with some music and added some effects using Adobe Premiere Pro and After Effects.",
     category: "video",
@@ -50,7 +60,7 @@ const initialProjects: Project[] = [
     year: "2024",
   },
   {
-    id: 3,
+    id: 4,
     title: "Github Readme Generator",
     description: "The GitHub Readme Generator is an AI-powered tool that simplifies the process of creating professional, detailed README files for GitHub repositories.",
     image: "/project2.jpeg?height=300&width=400",
@@ -58,17 +68,6 @@ const initialProjects: Project[] = [
     technologies: ["React", "No code", "Node.js", "MongoDB"],
     github: "https://github.com",
     live: "https://app--readmeai-40695e8a.base44.app/",
-    year: "2023",
-  },
-  {
-    id: 4,
-    title: "Personal Financial Tracker",
-    description: "This is a modern, responsive financial tracking web application built using the MERN stack with Supabase as the backend. The app allows users to seamlessly manage their income and expenses in real-time with a clean and intuitive UI",
-    image: "/project4.jpeg?height=300&width=400",
-    category: "coding",
-    technologies: ["MERN", "MongoDB", "No Code"],
-    github: "https://github.com/SiddheshCodes4554/personal-finance-app",
-    live: "https://personal-finance-app-flame.vercel.app/",
     year: "2023",
   },
   {
