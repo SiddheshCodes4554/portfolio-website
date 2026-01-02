@@ -27,6 +27,35 @@ export async function POST(request: NextRequest) {
       userAgent: request.headers.get("user-agent") || "unknown",
     })
 
+    // Send to Google Sheets if URL is configured
+    const scriptUrl = process.env.GOOGLE_SHEETS_SCRIPT_URL
+    if (scriptUrl) {
+      try {
+        const controller = new AbortController()
+        const timeoutId = setTimeout(() => controller.abort(), 5000) // 5 second timeout
+
+        await fetch(scriptUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: name.trim(),
+            email: email.trim().toLowerCase(),
+            subject: subject.trim(),
+            message: message.trim(),
+            timestamp: new Date().toISOString(),
+          }),
+          signal: controller.signal,
+        })
+
+        clearTimeout(timeoutId)
+      } catch (sheetError) {
+        console.error("Failed to save to Google Sheets:", sheetError)
+        // We continue because local save was successful
+      }
+    }
+
     return NextResponse.json({
       success: true,
       message: "Thank you for your message! I'll get back to you soon.",
