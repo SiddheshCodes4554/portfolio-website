@@ -17,15 +17,23 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Invalid email address" }, { status: 400 })
     }
 
-    // Save submission
-    const submission = await saveSubmission({
-      name: name.trim(),
-      email: email.trim().toLowerCase(),
-      subject: subject.trim(),
-      message: message.trim(),
-      ipAddress: request.ip || request.headers.get("x-forwarded-for") || "unknown",
-      userAgent: request.headers.get("user-agent") || "unknown",
-    })
+    // Save submission (locally)
+    // Note: This might fail in serverless environments (like Vercel) which is fine.
+    // We treat it as "best effort".
+    let submissionId = "submitted-" + Date.now()
+    try {
+      const submission = await saveSubmission({
+        name: name.trim(),
+        email: email.trim().toLowerCase(),
+        subject: subject.trim(),
+        message: message.trim(),
+        ipAddress: request.ip || request.headers.get("x-forwarded-for") || "unknown",
+        userAgent: request.headers.get("user-agent") || "unknown",
+      })
+      submissionId = submission.id
+    } catch (fsError) {
+      console.warn("Could not save to local filesystem (expected in serverless):", fsError)
+    }
 
     // Send to Google Sheets if URL is configured
     const scriptUrl = process.env.GOOGLE_SHEETS_SCRIPT_URL
@@ -59,7 +67,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       message: "Thank you for your message! I'll get back to you soon.",
-      id: submission.id,
+      id: submissionId,
     })
   } catch (error) {
     console.error("Contact form error:", error)
