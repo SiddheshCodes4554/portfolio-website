@@ -54,7 +54,7 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            {["Home", "About", "Work", "Skills", "Contact"].map((item, index) => (
+            {["Home", "About", "Work", "Skills", "Achievements", "Contact"].map((item, index) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -79,7 +79,7 @@ export default function Navigation() {
       {/* Mobile Menu */}
       <div className="mobile-menu fixed top-0 right-0 w-full h-screen bg-black/95 backdrop-blur-lg z-30 translate-x-full md:hidden">
         <div className="flex flex-col items-center justify-center h-full space-y-8">
-          {["Home", "About", "Work", "Skills", "Contact"].map((item) => (
+          {["Home", "About", "Work", "Skills", "Achievements", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
